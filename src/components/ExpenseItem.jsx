@@ -6,7 +6,7 @@ const ExpenseItem = React.memo(({ expense, deleteExpense }) => {
       <span>{expense.name}:</span>
       <span>&#8377; {expense.amount.toFixed(2)}</span>
       <button onClick={() => deleteExpense(expense.id)} className="delete-btn">
-        Delete
+        <i class="fa-solid fa-trash"></i>
       </button>
     </div>
   );

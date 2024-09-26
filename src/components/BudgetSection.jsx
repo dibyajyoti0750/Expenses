@@ -23,16 +23,18 @@ const BudgetSection = ({ budget, setBudget }) => {
             min="0"
             required
           />
-          <button type="submit">Save</button>
+          <button type="submit">
+            <b>Save</b>
+          </button>
           <button type="button" onClick={() => setEditMode(false)}>
-            Cancel
+            <b>Cancel</b>
           </button>
         </form>
       ) : (
         <div className="budget-display">
           <span className="budget-amount">&#8377; {budget.toFixed(2)}</span>
           <button className="edit-budget-btn" onClick={() => setEditMode(true)}>
-            Edit Budget
+            <b>Edit Budget</b>
           </button>
         </div>
       )}

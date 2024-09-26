@@ -16,9 +16,9 @@ const ExpenseList = ({ expenses, deleteExpense }) => {
         <p>No expenses yet.</p>
       ) : (
         <List
-          height={400} // Adjust based on your layout
+          height={400}
           itemCount={expenses.length}
-          itemSize={35} // Adjust based on your item height
+          itemSize={45}
           width="100%"
         >
           {Row}

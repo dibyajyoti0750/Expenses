@@ -41,7 +41,9 @@ const ExpenseForm = ({ addExpense }) => {
         min="0.01"
         required
       />
-      <button type="submit">Add Expense</button>
+      <button type="submit">
+        <b>Add Expense</b>
+      </button>
     </form>
   );
 };
